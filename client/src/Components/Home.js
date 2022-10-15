@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import DogPage from './DogPage'
 
 function Home({ user }) {
     if (user) {
@@ -6,7 +7,7 @@ function Home({ user }) {
         return (
           <>
             <h4>Karibu, { user.firstname }!</h4>
-        
+            <DogPage />
           </>
         )
         
@@ -15,4 +16,4 @@ function Home({ user }) {
       }
     }
 
-export default Home;
+export default Home
