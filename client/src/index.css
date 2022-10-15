@@ -11,3 +11,33 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.1px solid grey;
+  position: fixed;
+  width: 100%;
+  margin-top: 0px;
+}
+
+header a,
+header button {
+  font-size: 1rem;
+  display: inline-block;
+  background-color: grey;
+  border: 2px solid white;
+  margin: 1rem;
+  padding: 0.5rem;
+  text-decoration: none;
+  color: blue;
+  width: 50px;
+  cursor: pointer;
+  border-radius: 10px; 
+}
+
+.nav {
+  background-color: rgb(53, 52, 52);
+  height: 65px;
+}

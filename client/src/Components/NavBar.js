@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
 
-function NavBar() {
+function NavBar({ user, setUser }) {
     function handleLogoutClick() {
         fetch("/logout", { method: "DELETE" }).then((r) => {
           if (r.ok) {
@@ -14,7 +14,7 @@ function NavBar() {
       <div>
         <Link to="/" className="header-btn">Home</Link>
       </div>
-      <h1>Blogs App</h1>
+      <h1>Dog Website</h1>
       <div>
         {user ? (
           <button onClick={handleLogoutClick} className="header-btn-logout" >Logout</button>
