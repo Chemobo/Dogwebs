@@ -18,4 +18,4 @@ function DogList({ dogs, onDeleteDog}) {
   );
 }
 
-export default DogList
+export default DogList;
