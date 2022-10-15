@@ -14,7 +14,7 @@ function DogPage() {
         });
     }, []);
 
-    function handleDog(NewDog){
+    function handleAddDog(NewDog){
     const updatedDogArray = [NewDog, ...dogs]
     setDogs(updatedDogArray)
   }
