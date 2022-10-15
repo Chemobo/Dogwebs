@@ -1,6 +1,6 @@
 import {useState }from 'react';
 
-function Signup() {
+function Signup({ setUser }) {
   const [username, setUsername] = useState("");
   const [firstname, setFistName] = useState("");
   const [lastname, setLastName] = useState("");
