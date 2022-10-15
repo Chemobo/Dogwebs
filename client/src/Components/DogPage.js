@@ -25,7 +25,7 @@ function DogPage() {
     }
   return (
     <div>
-         <NewDog onAddCocktail={handleDog}/>
+          <NewDog onAddDog={handleAddDog}/>
          <DogList
          dogs={dogs}
          onDeleteDog ={handleDeleteDog}
