@@ -11,7 +11,7 @@ function DogCard({dog, onDeleteDog, onUpdateDog}) {
 
     function getUpdator() {
         if (updator)
-        return <UpdateDog onUpdateDog={onUpdateDog} dog={dog} />
+        return <UpdateDog  onEditDog={onUpdateDog} dog={dog} />
     }
 
     function handleDeleteDog(){

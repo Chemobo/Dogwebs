@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 
-function UpdateDog({ dog, onUpdateDog }) {
+function EditDog({ dog, onEditDog }) {
 
     const [name, setName] = useState("");
     const [image, setImage] = useState("")
     const [description, setDescription] = useState("")
 
-    function handleUpdateDog(e) {
+    function handleEditDog(e) {
         e.preventDefault();
         fetch (`/dogs/${dog.id}`, {
             method: "PATCH", 
@@ -21,13 +21,16 @@ function UpdateDog({ dog, onUpdateDog }) {
         })
 
         .then((r) => r.json())
-        .then(updatedDog => {
-            onUpdateDog(updatedDog)
+        .then(editedDog => {
+            onEditDog(editedDog)
+            setName("")
+          setImage("")
+          setDescription("")
         })
     }
   return (
     <div>
-        <form onSubmit={handleUpdateDog} >
+        <form onSubmit={handleEditDog} >
             <input
               type="text"
               name ="name"
@@ -52,10 +55,10 @@ function UpdateDog({ dog, onUpdateDog }) {
               onChange={(e) => setDescription(e.target.value)}
             />
             {" "}
-        <button type="submit">UpdateDog</button>
+        <button type="submit">editDog</button>
         </form>
     </div>
   )
 }
 
-export default UpdateDog;
+export default EditDog;

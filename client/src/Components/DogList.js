@@ -1,7 +1,7 @@
 import React from 'react';
 import DogCard from './DogCard';
 
-function DogList({ dogs, onDeleteDog}) {
+function DogList({ dogs, onDeleteDog, onUpdateDog}) {
   return (
     <div className='dogcards'>
         {dogs.map((dog) => {
@@ -10,7 +10,7 @@ function DogList({ dogs, onDeleteDog}) {
                 key = {dog.id}
                 dog ={dog}
                 onDeleteDog = {onDeleteDog}
-                
+                onUpdateDog = {onUpdateDog}
                 />
             );
         })}

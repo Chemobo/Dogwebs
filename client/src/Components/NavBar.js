@@ -14,7 +14,7 @@ function NavBar({ user, setUser }) {
       <div>
         <Link to="/" className="header-btn">Home</Link>
       </div>
-      <h1>Dog Website</h1>
+      <h1>Dogwebs</h1>
       <div>
         {user ? (
           <button onClick={handleLogoutClick} className="header-btn-logout" >Logout</button>

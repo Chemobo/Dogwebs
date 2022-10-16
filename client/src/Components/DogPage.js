@@ -23,12 +23,17 @@ function DogPage() {
         const updatedDogArray = dogs.filter((dog) => dog.id !== id);
         setDogs(updatedDogArray)
     }
+    function handleUpdateDog(){
+         
+    }
+
   return (
     <div>
           <NewDog onAddDog={handleAddDog}/>
          <DogList
          dogs={dogs}
          onDeleteDog ={handleDeleteDog}
+         onUpdateDog ={handleUpdateDog}
          />
     </div>
   )
