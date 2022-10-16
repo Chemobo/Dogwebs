@@ -1,5 +1,4 @@
 import React from 'react';
-import DogPage from './DogPage';
 
 function Home({ user }) {
     if (user) {
@@ -8,7 +7,6 @@ function Home({ user }) {
           <>
           <div className= "content">
             <h4>Karibu, { user.firstname }!</h4>
-            <DogPage />
             </div>      
           </>
         )

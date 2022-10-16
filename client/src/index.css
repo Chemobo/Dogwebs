@@ -1,6 +1,7 @@
 body {
   color: black;
- margin: 0 auto
+  
+
   }
 
 header {
@@ -39,10 +40,11 @@ header a, header button {
 }
 
 .btn-login, .btn-signup, .bt-addDog{
-  margin: 0 auto;
+  margin: 10px;
   background-color: rgb(67, 168, 41);
-  border-radius: 20px;
+  border-radius: 5px;
   cursor: pointer;
+  border-radius: 10px;
 }
 
 .nav {
@@ -52,15 +54,14 @@ header a, header button {
 }
 
 form {
-  background-color: whitesmoke;
   border: 2px solid #28d330;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   width: 120px;
-  margin: 0 auto;
   padding: 2rem 2rem;
-  margin-right: 20px !important;
+  font-size: 14px;
+  background-color: #f6fffd;
 }
 
 .card {

@@ -35,7 +35,7 @@ def update
 private
 
 def dog_params
-params.permit(:name, :image, :description, :user_id)
+params.permit(:name, :image, :description)
 end
 
 def find_dog
