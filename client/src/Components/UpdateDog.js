@@ -13,11 +13,7 @@ function EditDog({ dog, onEditDog }) {
             headers: {
                 "Content-Type": "application/json",
               },
-              body: JSON.stringify({
-                newName: name,
-                newImage: image,
-                newDescription: description
-              }),
+              body: JSON.stringify({}),
         })
 
         .then((r) => r.json())

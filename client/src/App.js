@@ -4,7 +4,7 @@ import Home from './Components/Home';
 import Login from './Components/Login';
 import Signup from './Components/Signup';
 import NavBar from './Components/NavBar';
-import DogPage from './Components/DogPage'
+
 
 
 function App() {
@@ -47,7 +47,7 @@ function App() {
           </Switch>
       )}
     </div>
-    <DogPage />
+   
     </>
   
   );
