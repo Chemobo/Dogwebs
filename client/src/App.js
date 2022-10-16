@@ -22,7 +22,8 @@ function App() {
     <>
     <NavBar/>
     <NavBar user={user} setUser={setUser} />
-    <main>
+
+    <div className= "main">
       {user?(
         <>
         <Switch>
@@ -44,7 +45,7 @@ function App() {
             </Route>
           </Switch>
       )}
-    </main>
+    </div>
     </>
   
   );

@@ -6,8 +6,10 @@ function Home({ user }) {
       
         return (
           <>
+          <div className= "content">
             <h4>Karibu, { user.firstname }!</h4>
             <DogPage />
+            </div>      
           </>
         )
         
@@ -16,4 +18,4 @@ function Home({ user }) {
       }
     }
 
-export default Home
+export default Home;

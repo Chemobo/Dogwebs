@@ -32,7 +32,6 @@ function NewDog({onAddDog}) {
 
   return (
     <div className='adddog'>
-        <h4>Whats your say/comment on this dog?</h4>
         <form onSubmit={handleSubmit} >
             <input
               type="text"
@@ -43,9 +42,9 @@ function NewDog({onAddDog}) {
             />
             {" "}
              <input
-              type="text"
+              type="url"
               name ="image"
-              placeholder="Image"
+              placeholder="Image url"
               value ={image}
               onChange={(e) => setImage(e.target.value)}
             />
@@ -53,12 +52,12 @@ function NewDog({onAddDog}) {
              <input
               type="text"
               name ="description"
-              placeholder="Your Say"
+              placeholder="About the dog"
               value ={description}
               onChange={(e) => setDescription(e.target.value)}
             />
             {" "}
-        <button type="submit">Add Dog</button>
+        <button type="submit" className="btn-addDog" >Submit</button>
 
         </form>
     </div>

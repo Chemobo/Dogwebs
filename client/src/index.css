@@ -1,5 +1,6 @@
 body {
   color: black;
+ margin: 0 auto
   }
 
 header {
@@ -7,8 +8,11 @@ header {
   justify-content: space-between;
   align-items: center;
   border-bottom: 3px solid #28d330;
-  position: fixed;
+  /* position: fixed; */
+  position: absolute;
   width: 100%;
+  overflow: hidden;
+  height: 50px;
 }
 
 header a, header button {
@@ -34,7 +38,7 @@ header a, header button {
   color: hsl(7, 100%, 50%);
 }
 
-.btn-login, .btn-signup {
+.btn-login, .btn-signup, .bt-addDog{
   margin: 0 auto;
   background-color: rgb(67, 168, 41);
   border-radius: 20px;
@@ -43,7 +47,7 @@ header a, header button {
 
 .nav {
   background-color: rgb(159, 248, 171);
-  height: 70px;
+
   
 }
 
